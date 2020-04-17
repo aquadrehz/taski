@@ -1,6 +1,9 @@
 class Project < ApplicationRecord
   after_initialize :set_defaults
 
+  # Integrate validation
+  validates_presence_of :title, :description, :percent_completed
+
   # Custom scopes
   scope :almost_completed, -> {
     where('percent_completed > 75.0')
@@ -14,7 +17,6 @@ class Project < ApplicationRecord
     self.percent_completed ||= 0.0
   end
 
-  # Integrate validation
 
   # Integrate callback
   # Integrate database relationships

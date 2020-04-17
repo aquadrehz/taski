@@ -1,2 +1,7 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<h1>AquaDrehz Homepage</h1>
+<h2>Project List (Max 10 items)</h2>
+
+<% @projects.each do |project| %>
+  <p><strong><%= project.title%></strong> - <%= project.description%></p>
+
+<% end %>

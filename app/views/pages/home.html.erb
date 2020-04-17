@@ -1,7 +1,3 @@
 <h1>AquaDrehz Homepage</h1>
-<h2>Project List (Max 10 items)</h2>
 
-<% @projects.each do |project| %>
-  <p><strong><%= project.title%></strong> - <%= project.description%></p>
-
-<% end %>
+<%= render "shared/projects"%>

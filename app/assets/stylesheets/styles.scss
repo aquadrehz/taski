@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "Dead Space";
+  src: url('/assets/DeadSpaceTitleFont');
+}
+
 body {
   margin: 42px;
 }
 
 h1 {
-  font-family: "Arial Black", Gadget, sans-serif;
+  font-family: "Dead Space", Gadget, sans-serif;
+  font-size: 3.5em;
 }
 
 p{

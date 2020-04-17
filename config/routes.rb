@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get "about", to: "pages#about"
   get "error", to: "pages#error"
 
-  get "medium", to: redirect("https://medium.com/@aquaken_753")
+  get "medium", to: redirect("https://medium.com/@s.shumnan")
 
   resources :projects
 

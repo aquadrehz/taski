@@ -17,7 +17,6 @@ class Project < ApplicationRecord
     self.percent_completed ||= 0.0
   end
 
-
   # Integrate callback
   # Integrate database relationships
 end

@@ -21,5 +21,9 @@
 <hr>
 <h2>Task in current Project</h2>
 
+<% @project.tasks.each do |task| %>
+  <p><%= link_to task.title, project_task_path(@project.id, task.id) %></p>
+<% end %>
+
 <%= link_to "Add a new Task for this project",
             new_project_task_path(project_id: @project.id) %>

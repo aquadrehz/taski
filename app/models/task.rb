@@ -7,6 +7,8 @@ class Task < ApplicationRecord
     where(completed: true)
   }
 
+  mount_uploader :task_file, TaskFileUploader
+
   def mark_completed?
     self.completed == true
   end

@@ -12,7 +12,9 @@
   <body>
     <%= image_tag("logos/logo.png", width: 150) %>
     <p>
-    <%= render "shared/nav" %>
+      <%= render "shared/nav" %>
+      <%= render "shared/alerts" %>
+    </p>
     <%= yield %>
   </body>
 </html>
